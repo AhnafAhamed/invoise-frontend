@@ -1,4 +1,5 @@
 # invoise-frontend
+<<<<<<< HEAD
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -33,3 +34,6 @@ npm run build
 ```sh
 npm run lint
 ```
+=======
+Invoise is a simple quotation and invoicing app for freelancers.
+>>>>>>> 3b9be65cddbf69cd7dd94643cc783951d1cbd729
