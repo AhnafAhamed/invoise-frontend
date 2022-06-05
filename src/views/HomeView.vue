@@ -1,7 +1,15 @@
-<script setup></script>
-
 <template>
   <main>
-    <h1>Hello Worlds</h1>
+    <login-card />
   </main>
 </template>
+
+<script>
+import LoginCard from "../components/LoginCard.vue";
+
+export default {
+  components: {
+    LoginCard,
+  },
+};
+</script>
