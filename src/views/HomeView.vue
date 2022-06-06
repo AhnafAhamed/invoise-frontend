@@ -1,5 +1,7 @@
 <template>
-  <main>
+  <main
+    class="flex justify-center items-center flex-col h-screen bg-light-purple"
+  >
     <login-card />
   </main>
 </template>
