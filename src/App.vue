@@ -3,16 +3,11 @@
 </script>
 
 <template>
-  <!-- <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header> -->
-
-  <RouterView />
+  <main
+    class="flex justify-center items-center flex-col h-screen bg-light-purple"
+  >
+    <RouterView />
+  </main>
 </template>
 
 <style></style>

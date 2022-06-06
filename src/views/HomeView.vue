@@ -1,17 +1,11 @@
 <template>
-  <main
-    class="flex justify-center items-center flex-col h-screen bg-light-purple"
-  >
-    <login-card />
-  </main>
+  <div>
+    <h1 class="text-dark-purple text-4xl font-extrabold">Home Page</h1>
+  </div>
 </template>
 
 <script>
-import LoginCard from "../components/LoginCard.vue";
-
 export default {
-  components: {
-    LoginCard,
-  },
+  components: {},
 };
 </script>
