@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <main
-    class="flex justify-center items-center flex-col h-screen bg-light-purple"
-  >
+  <main class="h-screen bg-light-purple">
     <RouterView />
   </main>
 </template>
