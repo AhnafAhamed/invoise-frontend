@@ -1,5 +1,5 @@
 <template>
-  <div class="logo flex items-center">
+  <div class="logo flex items-center justify-center">
     <invoice-icon class="mr-2" />
     <p class="font-extrabold text-2xl tracking-wider">
       IN<span class="text-dark-purple tracking-tight">VOISE</span>
