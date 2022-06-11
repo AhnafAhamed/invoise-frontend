@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <side-bar />
-    <div class="flex justify-between flex-wrap mt-10 ml-4">
+    <div class="flex justify-between flex-wrap mt-16 ml-16">
       <stat-card
         :text="'Total in Paid Invoices'"
         :amount="2200"
