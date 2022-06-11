@@ -1,5 +1,5 @@
 <template>
-  <div class="settings">
+  <div class="quotation">
     <side-bar />
   </div>
 </template>
@@ -8,7 +8,7 @@
 import SideBar from "../components/SideBar.vue";
 export default {
   components: { SideBar },
-  name: "SettingsView",
+  name: "QuotationView",
 };
 </script>
 

@@ -4,6 +4,8 @@ import LoginView from "../views/LoginView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import DashboardView from "../views/DashboardView.vue";
 import InvoiceView from "../views/InvoiceView.vue";
+import QuotationView from "../views/QuotationView.vue";
+import SettingsView from "../views/SettingsView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,14 +36,14 @@ const router = createRouter({
       component: InvoiceView,
     },
     {
-      path: "/qoutations",
-      name: "qoutation",
-      component: InvoiceView,
+      path: "/quotations",
+      name: "quotation",
+      component: QuotationView,
     },
     {
       path: "/settings",
       name: "settings",
-      component: InvoiceView,
+      component: SettingsView,
     },
   ],
 });

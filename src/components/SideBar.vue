@@ -16,7 +16,7 @@
       </side-bar-item>
     </router-link>
 
-    <router-link :to="{ name: 'qoutation' }">
+    <router-link :to="{ name: 'quotation' }">
       <side-bar-item :text="'Quotations'" class="sidebar-item">
         <quotation-icon class="sidebar-item__icon" />
       </side-bar-item>
