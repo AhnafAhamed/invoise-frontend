@@ -3,22 +3,35 @@
     class="sidebar flex flex-col text-center w-max h-screen bg-white px-6 py-10 rounded-r-3xl"
   >
     <invoise-logo class="mb-10" />
-    <side-bar-item class="sidebar-item--active" :text="'Dashboard'">
-      <dashboard-icon class="sidebar-item__icon" />
-    </side-bar-item>
-    <side-bar-item :text="'Invoices'">
-      <secondary-invoice-icon class="sidebar-item__icon" />
-    </side-bar-item>
-    <side-bar-item :text="'Quotations'">
-      <quotation-icon class="sidebar-item__icon" />
-    </side-bar-item>
-    <side-bar-item :text="'Settings'">
-      <settings-icon class="sidebar-item__icon" />
-    </side-bar-item>
+
+    <router-link :to="{ name: 'dashboard' }">
+      <side-bar-item :text="'Dashboard'" class="sidebar-item">
+        <dashboard-icon class="sidebar-item__icon" />
+      </side-bar-item>
+    </router-link>
+
+    <router-link :to="{ name: 'invoice' }">
+      <side-bar-item :text="'Invoices'" class="sidebar-item">
+        <secondary-invoice-icon class="sidebar-item__icon" />
+      </side-bar-item>
+    </router-link>
+
+    <router-link :to="{ name: 'qoutation' }">
+      <side-bar-item :text="'Quotations'" class="sidebar-item">
+        <quotation-icon class="sidebar-item__icon" />
+      </side-bar-item>
+    </router-link>
+
+    <router-link :to="{ name: 'settings' }">
+      <side-bar-item :text="'Settings'" class="sidebar-item">
+        <settings-icon class="sidebar-item__icon" />
+      </side-bar-item>
+    </router-link>
+
     <div class="flex grow items-end">
       <side-bar-item
         :text="'Log out'"
-        class="sidebar-item__log-out cursor-pointer"
+        class="sidebar-item sidebar-item__log-out cursor-pointer"
       >
         <logout-icon class="sidebar-item__icon" />
       </side-bar-item>
@@ -59,14 +72,14 @@ export default {
 .sidebar-item__log-out:hover path {
   fill: #d14f4f;
 }
-.sidebar-item--active {
+.router-link-active .sidebar-item {
   background-color: #f4f3fa;
 }
-.sidebar-item--active p {
+.router-link-active .sidebar-item p {
   color: #4c49ed;
   font-weight: 900;
 }
-.sidebar-item--active svg path {
+.router-link-active .sidebar-item svg path {
   fill: #4c49ed;
 }
 </style>
