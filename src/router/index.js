@@ -14,38 +14,64 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+      meta: {
+        title: "HOME",
+      },
     },
     {
       path: "/login",
       name: "login",
       component: LoginView,
+      meta: {
+        title: "LOGIN",
+      },
     },
     {
       path: "/register",
       name: "register",
       component: RegisterView,
+      meta: {
+        title: "REGISTER",
+      },
     },
     {
       path: "/dashboard",
       name: "dashboard",
       component: DashboardView,
+      meta: {
+        title: "DASHBOARD",
+      },
     },
     {
       path: "/invoices",
       name: "invoice",
       component: InvoiceView,
+      meta: {
+        title: "INVOICE",
+      },
     },
     {
       path: "/quotations",
       name: "quotation",
       component: QuotationView,
+      meta: {
+        title: "QUOTATION",
+      },
     },
     {
       path: "/settings",
       name: "settings",
       component: SettingsView,
+      meta: {
+        title: "SETTINGS",
+      },
     },
   ],
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = `${to.meta.title} | INVOISE`;
+  next();
 });
 
 export default router;
