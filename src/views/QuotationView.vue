@@ -1,7 +1,7 @@
 <template>
   <div class="quotation flex">
     <side-bar />
-    <div class="mt-16 ml-16">
+    <div class="m-auto mt-16 w-8/12">
       <div class="flex justify-between items-end">
         <h1 class="text-2xl font-extrabold uppercase">Quotations</h1>
         <add-button :text="'New Quotation'" />
