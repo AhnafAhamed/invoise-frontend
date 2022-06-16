@@ -7,7 +7,7 @@
         <add-button :text="'New Invoice'" @click="addButtonClick" />
       </div>
       <main-table class="mt-12" />
-      <form-modal
+      <invoice-modal
         v-show="isModalActive"
         @close-button-clicked="closeButtonClick"
       />
@@ -17,12 +17,12 @@
 
 <script>
 import AddButton from "../components/AddButton.vue";
-import FormModal from "../components/FormModal.vue";
+import InvoiceModal from "../components/InvoiceModal.vue";
 import MainTable from "../components/MainTable.vue";
 import SideBar from "../components/SideBar.vue";
 export default {
   name: "InvoiceView",
-  components: { SideBar, MainTable, AddButton, FormModal },
+  components: { SideBar, MainTable, AddButton, InvoiceModal },
   data: function () {
     return {
       isModalActive: false,
