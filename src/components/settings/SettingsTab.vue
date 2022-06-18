@@ -81,12 +81,12 @@ export default {
     isTabOneActive() {
       this.TabOneActive = true;
       this.TabTwoActive = false;
-      this.$emit("tab-one-active");
+      this.$emit("tab-one-click");
     },
     isTabTwoActive() {
       this.TabTwoActive = true;
       this.TabOneActive = false;
-      this.$emit("tab-two-active");
+      this.$emit("tab-two-click");
     },
   },
 };

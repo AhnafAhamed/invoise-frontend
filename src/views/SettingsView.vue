@@ -2,33 +2,9 @@
   <div class="settings flex">
     <side-bar />
     <div class="settings-form m-auto mt-16 w-6/12">
-      <settings-tab @tab-one-active="TabOneView" />
-      <form class="mt-8">
-        <label
-          for="name"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-          >Name</label
-        >
-        <input
-          type="text"
-          id="name"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="Ahnaf"
-          required
-        />
-        <label
-          for="password"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-          >Password</label
-        >
-        <input
-          type="password"
-          id="password"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="Password"
-          required
-        />
-      </form>
+      <settings-tab @tab-one-click="tabOneView" @tab-two-click="tabTwoView" />
+      <profile-settings v-if="isTabOneView" />
+      <app-settings v-if="isTabTwoView" />
     </div>
   </div>
 </template>
@@ -36,12 +12,25 @@
 <script>
 import SettingsTab from "../components/settings/SettingsTab.vue";
 import SideBar from "../components/global/SideBar.vue";
+import ProfileSettings from "../components/settings/ProfileSettings.vue";
+import AppSettings from "../components/settings/AppSettings.vue";
 export default {
-  components: { SideBar, SettingsTab },
+  components: { SideBar, SettingsTab, ProfileSettings, AppSettings },
   name: "SettingsView",
+  data: function () {
+    return {
+      isTabOneView: true,
+      isTabTwoView: false,
+    };
+  },
   methods: {
-    TabOneView() {
-      console.log("Tab one view");
+    tabOneView() {
+      this.isTabOneView = true;
+      this.isTabTwoView = false;
+    },
+    tabTwoView() {
+      this.isTabTwoView = true;
+      this.isTabOneView = false;
     },
   },
 };
