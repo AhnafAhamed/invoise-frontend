@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import SideBar from "../components/SideBar.vue";
-import StatCard from "../components/StatCard.vue";
+import SideBar from "../components/global/SideBar.vue";
+import StatCard from "../components/global/StatCard.vue";
 export default {
   components: { SideBar, StatCard },
   name: "DashboardView",

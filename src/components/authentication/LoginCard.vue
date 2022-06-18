@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import InvoiseLogo from "./InvoiseLogo.vue";
+import InvoiseLogo from "../global/InvoiseLogo.vue";
 export default {
   components: { InvoiseLogo },
   name: "LoginCard",

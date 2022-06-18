@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import AddButton from "../components/AddButton.vue";
-import MainTable from "../components/MainTable.vue";
-import QuotationModal from "../components/QuotationModal.vue";
-import SideBar from "../components/SideBar.vue";
+import AddButton from "../components/global/AddButton.vue";
+import MainTable from "../components/global/MainTable.vue";
+import QuotationModal from "../components/quotation/QuotationModal.vue";
+import SideBar from "../components/global/SideBar.vue";
 export default {
   components: { SideBar, MainTable, AddButton, QuotationModal },
   name: "QuotationView",

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import InvoiceIcon from "./icons/InvoiceIcon.vue";
+import InvoiceIcon from "../icons/InvoiceIcon.vue";
 export default {
   components: { InvoiceIcon },
   name: "InvoiseLogo",

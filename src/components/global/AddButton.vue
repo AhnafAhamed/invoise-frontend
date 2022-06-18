@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import AddIcon from "./icons/AddIcon.vue";
+import AddIcon from "../icons/AddIcon.vue";
 export default {
   name: "AddButton",
   components: { AddIcon },

@@ -40,11 +40,11 @@
 </template>
 
 <script>
-import DashboardIcon from "./icons/DashboardIcon.vue";
-import LogoutIcon from "./icons/LogoutIcon.vue";
-import QuotationIcon from "./icons/QuotationIcon .vue";
-import SecondaryInvoiceIcon from "./icons/SecondaryInvoiceIcon.vue";
-import SettingsIcon from "./icons/SettingsIcon.vue";
+import DashboardIcon from "../icons/DashboardIcon.vue";
+import LogoutIcon from "../icons/LogoutIcon.vue";
+import QuotationIcon from "../icons/QuotationIcon .vue";
+import SecondaryInvoiceIcon from "../icons/SecondaryInvoiceIcon.vue";
+import SettingsIcon from "../icons/SettingsIcon.vue";
 import InvoiseLogo from "./InvoiseLogo.vue";
 import SideBarItem from "./SideBarItem.vue";
 

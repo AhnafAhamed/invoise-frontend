@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import AddButton from "../components/AddButton.vue";
-import InvoiceModal from "../components/InvoiceModal.vue";
-import MainTable from "../components/MainTable.vue";
-import SideBar from "../components/SideBar.vue";
+import AddButton from "../components/global/AddButton.vue";
+import InvoiceModal from "../components/invoice/InvoiceModal.vue";
+import MainTable from "../components/global/MainTable.vue";
+import SideBar from "../components/global/SideBar.vue";
 export default {
   name: "InvoiceView",
   components: { SideBar, MainTable, AddButton, InvoiceModal },
